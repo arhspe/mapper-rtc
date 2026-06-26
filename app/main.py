@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from fastapi.responses import RedirectResponse 
 from app.status import router as status_router
 from app.v1_01_00.routes import lc116, nbs
 from app.v1_01_00.services.search_service import initialize_search_service
@@ -7,6 +8,10 @@ app = FastAPI(
     title="API de Correlacao Tributaria (RTC)",
     description="Motor de consulta de correlacoes fiscais (LC 116, NBS, cClassTrib, cIndOp)",
 )
+
+@app.get("/", include_in_schema=False)
+def redirect_to_docs():
+    return RedirectResponse(url="/docs")
 
 @app.on_event("startup")
 def startup_event():

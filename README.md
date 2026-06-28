@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="logo.png" alt="Mapper RTC Logo" width="150">
+
   # Mapper RTC
 
   [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org)

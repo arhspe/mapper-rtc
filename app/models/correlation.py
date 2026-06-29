@@ -6,7 +6,6 @@ class NbsService(BaseModel):
     descricao_nbs: str = Field(..., example="Serviços de projeto, desenvolvimento...", description="Descrição da atividade na NBS")
 
 class TaxClassification(BaseModel):
-  
     cClassTrib: str = Field(..., example="000001", description="Código de Classificação Tributária")
     nome_cClassTrib: str = Field(..., example="Situações tributadas integralmente...", description="Nome da classificação tributária")
 

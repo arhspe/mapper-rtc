@@ -5,7 +5,7 @@
   # Mapper RTC
 
   [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org)
-  [![FastAPI](https://img.shields.io/badge/FastAPI-0.100%2B-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+  [![API Version](https://img.shields.io/badge/API_Version-v2.0.0-1f425f?logo=fastapi&logoColor=white)](http://127.0.0.1:8000/docs)
   [![API Status](https://img.shields.io/badge/API_Status-Online-brightgreen?logo=statuspage&logoColor=white)](http://mapper-rtc.com.br/docs)
   [![Architecture](https://img.shields.io/badge/Arquitetura-In--Memory-blueviolet?logo=speedtest&logoColor=white)](#)
   [![License](https://img.shields.io/badge/license-Apache%202.0-orange)](https://opensource.org/licenses/Apache-2.0)
@@ -31,10 +31,9 @@ Os endpoints listados abaixo contemplam mapeamentos estruturados de acordo com a
 > [!IMPORTANT]
 > **Nota sobre Atualizações:** A API foi arquitetada para receber atualizações manuais e incrementais à medida que novas versões da tabela de correlação forem disponibilizadas oficialmente no portal do _[Ambiente Nacional da NFS-e (RTC)](https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc)_.
 
-Abaixo estão descritas as operações disponíveis, utilizando como exemplo as rotas da versão `v1_01_00`:
+Abaixo estão descritas as operações disponíveis, utilizando como exemplo as rotas da versão `v1_00_00`:
 
 | Método | Endpoint | Descrição |
 | :--- | :--- | :--- |
 | `GET` | `/status` | Healthcheck (Verifica se a API está online). |
-| `GET` | `/v1_01_00/lc116/{code}` | Retorna as correlações da LC 116/03 para IBS/CBS. |
-| `GET` | `/v1_01_00/nbs/{code}` | Retorna as correlações a partir do código NBS. |
+| `GET` | `/v1_00_00/lc116/{code}` | Retorna as correlações da LC 116/03 para IBS/CBS. |

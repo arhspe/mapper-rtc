@@ -4,15 +4,17 @@
 
   # Mapper RTC
 
-  [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue?logo=python&logoColor=white)](https://www.python.org)
-  [![API Version](https://img.shields.io/badge/API_Version-v2.0.0-1f425f?logo=fastapi&logoColor=white)](http://127.0.0.1:8000/docs)
-  [![API Status](https://img.shields.io/badge/API_Status-Online-brightgreen?logo=statuspage&logoColor=white)](http://mapper-rtc.com.br/docs)
-  [![Architecture](https://img.shields.io/badge/Arquitetura-In--Memory-blueviolet?logo=speedtest&logoColor=white)](#)
+  ![Status](https://img.shields.io/badge/Status-Online-brightgreen)
+  ![v2.0.0](https://img.shields.io/badge/v2.0.0-f97316?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRhZy1pY29uIGx1Y2lkZS10YWciPjxwYXRoIGQ9Ik0xMi41ODYgMi41ODZBMiAyIDAgMCAwIDExLjE3MiAySDRhMiAyIDAgMCAwLTIgMnY3LjE3MmEyIDIgMCAwIDAgLjU4NiAxLjQxNGw4LjcwNCA4LjcwNGEyLjQyNiAyLjQyNiAwIDAgMCAzLjQyIDBsNi41OC02LjU4YTIuNDI2IDIuNDI2IDAgMCAwIDAtMy40MnoiLz48Y2lyY2xlIGN4PSI3LjUiIGN5PSI3LjUiIHI9Ii41IiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=)
   [![License](https://img.shields.io/badge/license-Apache%202.0-orange)](https://opensource.org/licenses/Apache-2.0)
 
+  [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
+  [![Pandas](https://img.shields.io/badge/Pandas-150458?style=flat&logo=pandas&logoColor=white)](https://pandas.pydata.org)
+  [![Pydantic](https://img.shields.io/badge/Pydantic-E92063?style=flat&logo=pydantic&logoColor=white)](https://docs.pydantic.dev)
+  
 </div>
 
-`mapper-rtc` é uma API desenvolvida em Python com FastAPI para simplificar a consulta de correlações fiscais trazidas pela Reforma Tributária do Consumo. Ela mapeia a relação entre os itens da _[Lei Complementar nº 116, de 31 de julho de 2003](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm)_ e os novos indexadores do **IBS** e **CBS**, cruzando códigos **NBS**, parâmetros de operação (`cIndOp`) e classificações tributárias (`cClassTrib`).
+`mapper-rtc` é uma API desenvolvida em Python com FastAPI para simplificar a consulta de correlações fiscais trazidas pela Reforma Tributária do Consumo. Focada na estrutura do _[Anexo VIII](https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc/anexoviii-correlacaoitemnbsindopcclasstrib_ibscbs_v1-01-00.xlsx)_, ela mapeia a relação entre os itens da _[Lei Complementar nº 116, de 31 de julho de 2003](https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp116.htm)_ e os novos indexadores do **IBS** e **CBS**, cruzando códigos **NBS**, parâmetros de operação (`cIndOp`) e classificações tributárias (`cClassTrib`).
 
 A API adota uma arquitetura de dados em memória. Os arquivos JSON são lidos e indexados em dicionários apenas uma vez, no momento em que a aplicação inicializa.
 

@@ -5,7 +5,7 @@
   # Mapper RTC
 
   ![Status](https://img.shields.io/badge/Status-Online-brightgreen)
-  ![v2.0.0](https://img.shields.io/badge/v2.0.0-f97316?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRhZy1pY29uIGx1Y2lkZS10YWciPjxwYXRoIGQ9Ik0xMi41ODYgMi41ODZBMiAyIDAgMCAwIDExLjE3MiAySDRhMiAyIDAgMCAwLTIgMnY3LjE3MmEyIDIgMCAwIDAgLjU4NiAxLjQxNGw4LjcwNCA4LjcwNGEyLjQyNiAyLjQyNiAwIDAgMCAzLjQyIDBsNi41OC02LjU4YTIuNDI2IDIuNDI2IDAgMCAwIDAtMy40MnoiLz48Y2lyY2xlIGN4PSI3LjUiIGN5PSI3LjUiIHI9Ii41IiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=)
+  ![v3.0.0](https://img.shields.io/badge/v3.0.0-f97316?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyOCIgaGVpZ2h0PSIyOCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNGRkZGRkYiIHN0cm9rZS13aWR0aD0iMi41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLXRhZy1pY29uIGx1Y2lkZS10YWciPjxwYXRoIGQ9Ik0xMi41ODYgMi41ODZBMiAyIDAgMCAwIDExLjE3MiAySDRhMiAyIDAgMCAwLTIgMnY3LjE3MmEyIDIgMCAwIDAgLjU4NiAxLjQxNGw4LjcwNCA4LjcwNGEyLjQyNiAyLjQyNiAwIDAgMCAzLjQyIDBsNi41OC02LjU4YTIuNDI2IDIuNDI2IDAgMCAwIDAtMy40MnoiLz48Y2lyY2xlIGN4PSI3LjUiIGN5PSI3LjUiIHI9Ii41IiBmaWxsPSJjdXJyZW50Q29sb3IiLz48L3N2Zz4=)
   [![License](https://img.shields.io/badge/license-Apache%202.0-orange)](https://opensource.org/licenses/Apache-2.0)
 
   [![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com)
@@ -28,14 +28,14 @@ A API conta com uma interface interativa e auto-documentada utilizando o padrão
 
 ### Endpoints Disponíveis 🗺️
 
-Os endpoints listados abaixo contemplam mapeamentos estruturados de acordo com as diretrizes e parâmetros oficiais da Reforma.
+Os endpoints listados abaixo contemplam mapeamentos estruturados de acordo com os parâmetros da Reforma.
 
 > [!IMPORTANT]
 > **Nota sobre Atualizações:** A API foi arquitetada para receber atualizações manuais e incrementais à medida que novas versões da tabela de correlação forem disponibilizadas oficialmente no portal do _[Ambiente Nacional da NFS-e (RTC)](https://www.gov.br/nfse/pt-br/biblioteca/documentacao-tecnica/rtc)_.
 
-Abaixo estão descritas as operações disponíveis, utilizando como exemplo as rotas da versão `v1_00_00`:
+Abaixo estão descritas as operações disponíveis:
 
 | Método | Endpoint | Descrição |
 | :--- | :--- | :--- |
-| `GET` | `/status` | Healthcheck (Verifica se a API está online). |
-| `GET` | `/v1_00_00/lc116/{code}` | Retorna as correlações da LC 116/03 para IBS/CBS. |
+| `GET` | `/status` | Healthcheck |
+| `GET` | `/{version}/lc116/{code}` | Retorna as correlações dos Itens com `NBS`,`cIndOp` e `cClassTrib` |

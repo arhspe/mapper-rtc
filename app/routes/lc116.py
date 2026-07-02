@@ -1,13 +1,11 @@
-from fastapi import APIRouter, HTTPException, Request
+from fastapi import APIRouter, HTTPException
 from app.models.correlation import CorrelationResponse
 from app.services import loader
 
 router = APIRouter()
 
 @router.get("/{code}", response_model=CorrelationResponse)
-def get_correlation_by_lc116(code: str, request: Request):
-    path_parts = request.url.path.strip("/").split("/")
-    version = path_parts[0] 
+def get_correlation_by_lc116(version: str, code: str):
     
     result = loader.get_by_lc116(version, code)
     

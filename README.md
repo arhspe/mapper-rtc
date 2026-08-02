@@ -4,7 +4,7 @@ ___  ___                             ______ _____ _____    |
 | .  . | __ _ _ __  _ __   ___ _ __  | |_/ / | | | /  \/   |  entre a Lei Complementar nº 116
 | |\/| |/ _` | '_ \| '_ \ / _ \ '__| |    /  | | | |       |  e os novos códigos de IBS/CBS.
 | |  | | (_| | |_) | |_) |  __/ |    | |\ \  | | | \__/\   |
-\_|  |_/\__,_| .__/| .__/ \___|_|    \_| \_| \_/  \____/   |  release: v1.0.0   License: Apache 2.0
+\_|  |_/\__,_| .__/| .__/ \___|_|    \_| \_| \_/  \____/   |  release: v1.1.0   License: Apache 2.0
              | |   | |                                     |  Python: 3.12+     Status: Active
              |_|   |_|                                          
 ```
@@ -34,6 +34,9 @@ mapper-rtc/
 │   ├── transform.py             # transformacao e normalizacao dos dados
 │   ├── exporter.py              # exportacao para JSON
 │   └── runner.py                # executa todo o pipeline 
+│
+├── tests/                       # testes de integracao e scripts utilitarios
+│   └── test_api_client.py       # script de teste interativo da api
 │
 ├── .gitignore
 ├── LICENSE
@@ -147,7 +150,7 @@ http://localhost:8000
 
 ### 📋 Aviso
 
-> Mapper RTC é um projeto independente, de caráter informativo e sem vínculo com órgãos públicos. As informações disponibilizadas podem conter inconsistências ou não refletir imediatamente alterações na legislação vigente. O autor e os colaboradores não se responsabilizam por eventuais prejuízos decorrentes do uso deste projeto. Caso identifique alguma inconsistência ou tenha sugestões de melhoria, entre em contato pelo e-mail arhspe.dev@gmail.com.
+> Mapper RTC é um projeto independente, de caráter informativo e sem vínculo com órgãos públicos. As informações disponibilizadas podem conter inconsistências ou não refletir imediatamente alterações na legislação vigente. O autor e os colaboradores não se responsabilizam por eventuais prejuízos decorrentes do uso deste projeto. Caso identifique alguma inconsistência ou tenha sugestões de melhoria, entre em contato pelo e-mail arthursipereira.contato@gmail.com.
 
 ### 📄 Licença
 

@@ -17,7 +17,7 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(
     title="Mapper RTC",
-    version="1.0.0",
+    version="v1.1.0",
     description="Serviço de consulta e mapeamento cruzado entre a LC 116/2003 e os novos indexadores da Reforma Tributária.",
     lifespan=lifespan
 )

@@ -40,3 +40,9 @@ def initialize_search_service():
 
 def get_by_lc116(version: str, code: str):
     return _DATA_STORE.get(version, {}).get("lc116", {}).get(code)
+
+def version_exists(version: str) -> bool:
+    return version in _DATA_STORE
+
+def get_available_versions() -> list[str]:
+    return list(_DATA_STORE.keys())

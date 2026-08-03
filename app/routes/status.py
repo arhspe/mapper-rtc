@@ -31,7 +31,7 @@ def get_api_status():
         "status": "healthy",
         "app": {
             "name": "Mapper RTC",
-            "api_version": "1.0.0",  
+            "api_version": "v1.1.0",  
             "environment": os.getenv("ENV", "development"),
         },
         "system": {
